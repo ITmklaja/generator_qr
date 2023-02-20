@@ -3,7 +3,7 @@ let szerokosc = 0;
 if(window.innerWidth > 1024){
     szerokosc = 500;
 }else{
-    szerokosc = window.innerWidth * 0.4;
+    szerokosc = window.innerWidth * 0.6;
 };
 document.getElementById("main").style.width = szerokosc + "px";
 let kod = new QRious({
