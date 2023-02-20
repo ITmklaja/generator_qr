@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*:focus{
+    outline: 0 !important;
+}
+
+#out{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#kod-qr{
+    margin-top: 5vh;
+}
+
+#opcje{
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#zawartosc{
+    width: 100%;
+    border: 3px solid red;
+    height: 5vh;
+    text-align: center;
+    font-size: 100%;
+}
+
+#funkcje{
+    width: 100%;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-funkcje{
+    background-color: red;
+    border: none;
+    height: 7vh;
+    width: 30%;
+    color: white;
+    font-size: 95%;
+    cursor: pointer;
+}
+
+#pobierz{
+    text-decoration: none;
+    color: white;
+}

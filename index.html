@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Generator kodów QR</title>
+</head>
+<body>
+    <section id="out">
+        <section id="main">
+            <canvas id="kod-qr"></canvas>
+            <section id="opcje">
+                <input type="text" id="zawartosc" placeholder="Wprowadź tekst">
+                <section id="funkcje">
+                    <button class="button-funkcje" id="wyslij">Wygeneruj kod QR</button>
+                    <button class="button-funkcje" ><a id="pobierz" href="#" download>Pobierz</a></button>
+                    <button class="button-funkcje" id="new-btn">Resetuj</button>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+    <script src="generator.js"></script>
+</body>
+</html>
