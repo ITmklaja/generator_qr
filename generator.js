@@ -18,21 +18,14 @@ var newBtn = document.getElementById("new-btn");
 
 
 wyslij.addEventListener('click', function() {
-    if(input.value = ''){
-        alert('Nie podano danych! <br> Czy na pewno chcesz kontynuować?')
-    }
     let nowaWartosc = input.value;
     kod.set({
         value: nowaWartosc
     });
 
-    if(pobierz == ''){
-        pobierz.setAttribute('download', 'Pusty_kod_QR');
-    }else {
-        let NazwaPliku = 'Kod_QR_' + nowaWartosc + '.png';
-        pobierz.setAttribute('download', NazwaPliku);
-    }
-
+    let NazwaPliku = 'Kod_QR_' + nowaWartosc + '.png';
+    pobierz.setAttribute('download', NazwaPliku);
+    
     let dataURL = canvas.toDataURL('image/png');
     pobierz.setAttribute('href', dataURL);
 });
